@@ -26,7 +26,7 @@ namespace books.Controllers
         }
 
         
-        [HttpGet("{id}")]
+        [HttpGet("{Id}")]
         public async Task<IActionResult> GetBookById(Guid Id)
         {
             // ADD VALIDATION
@@ -57,7 +57,7 @@ namespace books.Controllers
         }
 
         
-        [HttpPut("{id}")]
+        [HttpPut("{Id}")]
         public async Task<IActionResult> UpdateBookById([FromQuery] Guid Id, [FromBody] Book book)
         {
             // ADD VALIDATION
@@ -73,7 +73,7 @@ namespace books.Controllers
         }
 
         
-        [HttpDelete("{id}")]
+        [HttpDelete("{Id}")]
         public async Task<IActionResult> DeleteBookByID(Guid Id)
         {
             // ADD VALIDATION
